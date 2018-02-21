@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceSets {
+  main {
+	java {
+		srcDir 'src'
+	}
+  }
+}
+
+dependencies {
+   compile files ('lib/mysql-connector-java-5.1.45-bin.jar', 'lib/commons-dbcp-1.4.jar')
+   compile group: 'log4j', name: 'log4j', version: '1.2.17'
+   compile 'junit:junit:4.12'
+}
+
+
+task wrapper (type: Wrapper)
+
+mainClassName = 'TestMySQLConnection'
+
+repositories {
+   jcenter()
+}
+
+/*
+run {
+  if(project.hasProperty('args')){
+	args project.args.split('\\s')
+  }
+}
+*/
