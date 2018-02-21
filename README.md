@@ -2,4 +2,4 @@
 
 There are two gradle projects in this repository. `PluralSight_JDBC` and `multiprojectbuild`.
 
-`multiprojectbuild` is a simple project that builds two simple projects together, where one project has a dependency on the other.
+`multiprojectbuild` is a basic gradle root project that builds two simple gradle projects together. Where one project has a dependency on the other.
