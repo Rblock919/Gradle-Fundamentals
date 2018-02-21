@@ -6,6 +6,6 @@ project(':gradleJava'){}
 
 project(':gradleJavaTwo'){
    dependencies {
-	implementation project(':gradleJava')
+	compile project(':gradleJava')
    }
 }
